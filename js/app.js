@@ -116,6 +116,7 @@
    *   and passing two aditional arguments, event and 'light-green'
    */
 
+   btn5.addEventListener("click", (event) =>setMyLightClass.apply(btn5, [event, "light-green"]));
 
   /*
    * Add a click event listener to btn6
