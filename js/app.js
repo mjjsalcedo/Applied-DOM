@@ -31,10 +31,12 @@
    * on this dom element, set the className to the value of desiredClass
    */
 
-   /*function setMyLightClass(event, desiredClass){
-    let
+   function setMyLightClass(event, desiredClass){
+    let lightId = this.dataset.lightId;
+    let targetElem = document.getElementById(lightId);
+    targetElem.className = desiredClass;
    }
-*/
+
   /*
    * Declare 15 constants btn1, btn2, btn3, ...
    * use a dom element selector method to assign each const
