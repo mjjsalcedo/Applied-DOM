@@ -177,7 +177,6 @@
 
    const setLight10Green = setMyLightGreen.bind(btn10);
 
-   setLight10Green();
 
   /*
    * Add a click event listener to btn10
@@ -250,7 +249,7 @@
    */
 
    btn13.addEventListener("click", function(event){
-      setMyLightClass.apply(this, [event, 'light-green']).bind(btn13);
+      setMyLightClass.bind(btn13, event, "light-green")();
    });
 
   /*
@@ -260,7 +259,8 @@
    * on the setMyLightGreen function
    */
 
-  /* btn14.addEventListener("click", )*/
+   btn14.addEventListener("click", setMyLightGreen.bind(btn14)
+    );
 
   /*
    * Add a click event listener to btn15
@@ -270,5 +270,6 @@
    * Hint: Do not declare a new function expression as an event handler.
    */
 
+   btn15.addEventListener("click", setMyLightClass.bind(btn15, event, "light-green"));
 
 }(window));
