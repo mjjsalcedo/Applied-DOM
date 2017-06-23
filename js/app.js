@@ -16,7 +16,7 @@
    function setMyLightGreen(){
     let lightId = this.dataset.lightId;
     let targetElem = document.getElementById(lightId);
-    targetElem.className = "light green";
+    targetElem.className = "light-green";
    }
 
   /*
@@ -67,6 +67,9 @@
    * to set the context to the correct object (the current context)
    */
 
+   btn1.addEventListener("click", function(){
+      setMyLightGreen.apply(this);
+   });
 
 
   /*
@@ -78,12 +81,12 @@
    * to set the context to the correct object
    */
 
+ /*  btn2.addEventListener();*/
 
   /*
    * Add a click event listener to btn3
    * the handler method will be a reference to the setMyLightGreen function
    */
-
 
   /*
    * Add a click event listener to btn4
