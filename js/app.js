@@ -81,12 +81,14 @@
    * to set the context to the correct object
    */
 
- /*  btn2.addEventListener();*/
+  btn2.addEventListener("click", () =>setMyLightGreen.apply(btn2));
+
 
   /*
    * Add a click event listener to btn3
    * the handler method will be a reference to the setMyLightGreen function
    */
+
 
   /*
    * Add a click event listener to btn4
