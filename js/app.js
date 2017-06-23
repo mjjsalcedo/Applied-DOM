@@ -175,6 +175,8 @@
    * to set the context to the btn10 object
    */
 
+   const setLight10Green = setMyLightGreen.bind(btn10);
+   setLight10Green();
 
   /*
    * Add a click event listener to btn10
