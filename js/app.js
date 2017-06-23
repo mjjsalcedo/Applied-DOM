@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 (function(window) {
 
   /*
@@ -12,6 +13,11 @@
    * on this dom element, set the className to 'light-green'
    */
 
+   function setMyLightGreen(){
+    let lightId = this.dataset.lightId;
+    let targetElem = document.getElementById(lightId);
+    targetElem.className = "light green";
+   }
 
   /*
    * Create a function named setMyLightClass
@@ -41,6 +47,7 @@
    * using the Function prototype method: apply
    * to set the context to the correct object (the current context)
    */
+
 
 
   /*
