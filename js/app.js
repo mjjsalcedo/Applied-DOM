@@ -192,7 +192,7 @@
 
   /*
    * Declare a new const named setLight11Green
-   * assign it's value to a reference to the function setMyLightClass
+   * assign it's value to a reference to the funct  ion setMyLightClass
    * using the Function prototype method: bind
    * to set the context to the btn11 object
    *   passing 2 additional hardcoded arguments:
@@ -219,6 +219,7 @@
    * to set the context to the btn12 object
    */
 
+   const setLight12Class = setMyLightClass.bind(btn12);
 
   /*
    * Add a click event listener to btn12
@@ -230,6 +231,9 @@
    *     event, 'light-green'
    */
 
+   btn12.addEventListener("click", function(event){
+      setLight12Class(event, "light-green");
+    });
 
   /*
    * Add a click event listener to btn13
